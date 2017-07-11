@@ -5,6 +5,8 @@ const Route = ReactRouter.Route;
 const Switch = ReactRouter.Switch;
 const Home = require('./Home');
 const Header = require('./Header');
+const Forecast = require('./Forecast');
+const Detail = require('./Detail');
 
 class App extends React.Component {
   render() {
@@ -14,6 +16,8 @@ class App extends React.Component {
           <Header />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/forecast' component={Forecast} />
+            <Route path='/detail' component={Detail} />
           </Switch>
         </div>
       </Router>

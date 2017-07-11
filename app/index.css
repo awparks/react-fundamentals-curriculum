@@ -22,10 +22,12 @@ body {
   align-items: center;
 }
 
-.site-title {
+.site-title,
+.site-title a {
   font-size: 36px;
   color: #fff;
   flex: 1 0 auto;
+  text-decoration: none;
 }
 
 .header .zipcode-input {
@@ -101,4 +103,70 @@ input.form-control {
   background-color: #5cb85c;
   border-color: #4cae4c;
   margin-top: 15px;
+  text-decoration: none;
+}
+
+
+/* FORECAST //////////////////////// */
+
+.forecast-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 25px;
+}
+
+.forecast-day {
+  margin: 35px;
+}
+
+.forecast-day,
+.forecast-day a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+.weather-icon {
+  height: 130px;
+}
+
+.day {
+  font-size: 30px;
+  color: #333;
+  font-weight: 100;
+}
+
+.forecast-title,
+.detail-title {
+  flex: 1 0 100%;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 100;
+}
+
+.detail-title {
+  font-size: 42px;
+  margin-top: 0;
+}
+
+.detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.detail-item {
+  font-size: 30px;
+  color: #333;
+  font-weight: 100;
+  margin: 0 0 .5em;
 }
